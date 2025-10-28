@@ -1,0 +1,271 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bengala Inteligente — Blog & Portfólio</title>
+  <meta name="description" content="Projeto de bengala inteligente centrada na pessoa cega: objetivos, funcionalidades, roadmap e atualizações." />
+  <link rel="icon" href="favicon.ico" />
+  <meta property="og:title" content="Bengala Inteligente — Blog & Portfólio" />
+  <meta property="og:description" content="Acompanhe o progresso, atualizações e materiais do projeto de bengala inteligente de baixo custo." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="cover.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "Bengala Inteligente — Blog",
+    "url": "https://exemplo.com",
+    "description": "Divulgação técnica do projeto de bengala inteligente.",
+    "publisher": { "@type": "Person", "name": "Seu Nome" }
+  }
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Voltar ao topo">
+        <span class="logo"></span>
+        <strong>Bengala Inteligente</strong>
+      </a>
+      <nav class="flex hide-sm">
+        <a href="#sobre">Sobre</a>
+        <a href="#features">Funcionalidades</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#posts">Atualizações</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <div class="theme">
+        <button class="btn" id="themeToggle" aria-label="Alternar tema">🌗 Tema</button>
+        <a class="btn" href="#inscrever">Inscrever</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="top" class="container hero">
+    <div class="grid cols-2" style="align-items:center">
+      <div>
+        <span class="tag">Projeto em desenvolvimento</span>
+        <h1>Bengala inteligente de baixo custo, centrada na pessoa cega.</h1>
+        <p class="lead">Sensor ultrassônico + buzzer + vibração para navegação mais segura e autônoma — arquitetura aberta para escola e comunidade maker.</p>
+        <div class="cta">
+          <a href="#posts" class="btn-primary">Ler atualizações</a>
+          <a href="#sobre" class="btn-ghost">Conhecer o projeto</a>
+        </div>
+        <div style="margin-top:14px" class="muted">💡 Dica: personalize textos e imagens com seus resultados.</div>
+      </div>
+      <div>
+        <img class="hero-image" src="https://images.unsplash.com/photo-1581092334641-1a8a1bfa60a4?q=80&w=1200&auto=format&fit=crop" alt="Imagem ilustrativa do projeto" />
+      </div>
+    </div>
+  </main>
+
+  <!-- SOBRE -->
+  <section id="sobre">
+    <div class="container">
+      <h2>Sobre o projeto</h2>
+      <p class="section-lead">Resumo das motivações, público e benefícios da solução.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <h3>Objetivo</h3>
+          <p>Desenvolver uma <strong>bengala inteligente</strong> focada em <strong>segurança, autonomia e conforto</strong> da pessoa cega, usando detecção ultrassônica e <em>feedback</em> sonoro/ tátil proporcional à distância do obstáculo.</p>
+        </div>
+        <div class="card">
+          <h3>Público-alvo</h3>
+          <p><strong>Pessoas com deficiência visual</strong> (total ou parcial), escolas, centros de reabilitação e equipes acadêmicas interessadas em <strong>tecnologia assistiva de baixo custo</strong> com Arduino.</p>
+        </div>
+        <div class="card">
+          <h3>Impacto</h3>
+          <p><strong>Mais segurança e autonomia</strong> na locomoção diária, custo de montagem <strong>&lt; R$ 100</strong> em componentes, design ergonômico e fácil manutenção para ampla <strong>replicabilidade</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FUNCIONALIDADES -->
+  <section id="features">
+    <div class="container">
+      <h2>Funcionalidades</h2>
+      <p class="section-lead">Principais módulos e características do protótipo.</p>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="chip">📡 Detecção</span>
+          <h3>Ultrassom 20–80 cm</h3>
+          <p>Leitura contínua via <strong>HC‑SR04</strong> para indicar obstáculos próximos com baixa latência e boa confiabilidade.</p>
+        </div>
+        <div class="card">
+          <span class="chip">🔊 Feedback</span>
+          <h3>Som + Vibração</h3>
+          <p><strong>Buzzer</strong> e <strong>motor vibratório 1027</strong> com intensidade progressiva conforme a proximidade do obstáculo.</p>
+        </div>
+        <div class="card">
+          <span class="chip">🔋 Energia</span>
+          <h3>Bateria 9V</h3>
+          <p>Alimentação simples, com componentes fáceis de repor e opção de bateria recarregável.</p>
+        </div>
+        <div class="card">
+          <span class="chip">🧰 Ergonomia</span>
+          <h3>Leve e confortável</h3>
+          <p>Distribuição de massa e <strong>pegada</strong> ajustadas para uso prolongado com conforto.</p>
+        </div>
+        <div class="card">
+          <span class="chip">📲 Expansão</span>
+          <h3>Bluetooth & Rotas</h3>
+          <p>Planejado para <strong>registro de trajetos</strong>, georreferenciamento e alertas emergenciais no celular.</p>
+        </div>
+        <div class="card">
+          <span class="chip">💻 Aberto</span>
+          <h3>Arduino & Doc</h3>
+          <p>Código em Arduino e documentação educativa para reuso em aulas e laboratórios <em>maker</em>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section id="roadmap">
+    <div class="container">
+      <h2>Roadmap</h2>
+      <p class="section-lead">Principais marcos concluídos e próximos passos.</p>
+      <div class="timeline">
+        <div class="tl-item card">
+          <strong>Junho 2025</strong>
+          <div>📝 <strong>Projeto Proposto</strong> — requisitos, metas e arquitetura do protótipo.</div>
+        </div>
+        <div class="tl-item card">
+          <strong>Julho – Setembro 2025</strong>
+          <div>🧪 <strong>Testes de Protótipos e Modelos</strong> — calibração do HC‑SR04, ergonomia e lógica de feedback.</div>
+        </div>
+        <div class="tl-item card">
+          <strong>Setembro 2025</strong>
+          <div>🧾 <strong>Inscrição na Feira</strong> — submissão do projeto e documentação técnica.</div>
+        </div>
+        <div class="tl-item card">
+          <strong>Novembro 2025</strong>
+          <div>⏳ <strong>Aguardando Aprovação da Instituição</strong> — revisão e validações finais.</div>
+        </div>
+        <div class="tl-item card">
+          <strong>Novembro 2025</strong>
+          <div>🎤 <strong>Apresentação na Feira</strong> — demonstração pública do protótipo funcional.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POSTS -->
+  <section id="posts">
+    <div class="container">
+      <h2>Atualizações do blog</h2>
+      <p class="section-lead">Novidades, testes e bastidores do desenvolvimento.</p>
+      <div class="grid cols-2">
+        <article class="card post">
+          <img class="post-image" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=900&auto=format&fit=crop" alt="Post HC-SR04"/>
+          <div>
+            <h3><a href="#">Integração com o sensor HC‑SR04</a></h3>
+            <div class="meta">26 out 2025 · 5 min leitura · #Arduino #Acessibilidade</div>
+            <p>Testes de detecção entre <strong>20–80 cm</strong> e ajuste progressivo de som/vibração para diferentes ambientes.</p>
+          </div>
+        </article>
+        <article class="card post">
+          <img class="post-image" src="https://images.unsplash.com/photo-1518779578993-ec3579fee39f?q=80&w=900&auto=format&fit=crop" alt="Post ergonomia"/>
+          <div>
+            <h3><a href="#">Ergonomia e feedback tátil</a></h3>
+            <div class="meta">15 out 2025 · 4 min leitura · #UX #Prototipagem</div>
+            <p>Avaliação com usuários e ajustes na intensidade da vibração para conforto e percepção intuitiva.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq">
+    <div class="container">
+      <h2>Perguntas frequentes</h2>
+      <details>
+        <summary>Como a bengala detecta obstáculos?</summary>
+        <div style="margin-top:10px">Com <strong>ultrassom</strong>: o sensor emite pulsos e mede o tempo de retorno do eco, ajustando <strong>buzzer</strong> e <strong>vibração</strong> conforme a distância.</div>
+      </details>
+      <details>
+        <summary>Posso montar na escola ou em casa?</summary>
+        <div style="margin-top:10px">Sim. O código em <strong>Arduino</strong> e a lista de materiais de baixo custo tornam a montagem acessível e educativa.</div>
+      </details>
+      <details>
+        <summary>Quais são os próximos recursos?</summary>
+        <div style="margin-top:10px">Perfis silenciosos para locais públicos e integração <strong>Bluetooth</strong> para registrar trajetos e alertas.</div>
+      </details>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER + CONTATO -->
+  <section id="inscrever">
+    <div class="container">
+      <div class="grid cols-2">
+        <div class="card">
+          <h2>Assine para receber novidades</h2>
+          <p class="section-lead">Sem spam. Apenas releases e artigos importantes.</p>
+          <form onsubmit="newsletter(event)">
+            <label class="sr-only" for="email">Seu e‑mail</label>
+            <div class="flex">
+              <input id="email" type="email" required placeholder="seu@email.com" style="flex:1;padding:12px;border-radius:12px;border:1px solid var(--border);background:var(--card);color:var(--text)" />
+              <button class="btn-primary" type="submit">Assinar</button>
+            </div>
+            <p id="msg" class="muted" style="margin-top:10px"></p>
+          </form>
+        </div>
+        <div id="contato" class="card">
+          <h2>Contato</h2>
+          <p class="section-lead">Fale comigo para parcerias, dúvidas e pilotos.</p>
+          <ul>
+            <li>✉️ <strong>Raldiland Carvalho:</strong> <a href="mailto:raldiland.239949@fmm.org.br">raldiland.239949@fmm.org.br</a><br>✉️ <strong>Carlos Henrique:</strong> <a href="mailto:carlos.239954@fmm.org.br">carlos.239954@fmm.org.br</a></li>
+            <li>💼 <strong>Raldiland Carvalho:</strong> <a href="https://www.linkedin.com/in/raldiland">linkedin.com/in/raldiland</a><br>💼 <strong>Carlos Henrique:</strong> <a href="https://www.linkedin.com/in/carlos-henrique-239954">linkedin.com/in/carlos-henrique-239954</a></li>
+            <li>🐙 <strong>Raldiland Carvalho:</strong> <a href="https://github.com/raldi123">github.com/raldi123</a><br>🐙 <strong>Carlos Henrique:</strong> <a href="https://github.com/carlos239954">github.com/carlos239954</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <div class="flex right social">
+        <a href="#">GitHub</a>
+        <a href="#">LinkedIn</a>
+        <a href="#">YouTube</a>
+        <a href="#">Twitter/X</a>
+      </div>
+      <div class="container copyright">© <span id="year"></span> • Seu Nome — Todos os direitos reservados</div>
+    </div>
+  </footer>
+
+  <script>
+    const root = document.documentElement;
+    const savedTheme = localStorage.getItem('theme') || 'dark';
+    if(savedTheme === 'light'){ root.classList.add('light'); }
+    document.getElementById('themeToggle').addEventListener('click', () => {
+      root.classList.toggle('light');
+      localStorage.setItem('theme', root.classList.contains('light') ? 'light' : 'dark');
+    });
+
+    function newsletter(e){
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim();
+      const msg = document.getElementById('msg');
+      msg.textContent = email ? `Obrigado! Enviaremos novidades para ${email}.` : '';
+      e.target.reset();
+    }
+
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelectorAll('a[href^="#"]').forEach(a=>{
+      a.addEventListener('click', (ev)=>{
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if(el){ ev.preventDefault(); el.scrollIntoView({behavior:'smooth', block:'start'}); }
+      })
+    });
+  </script>
+</body>
+</html>
